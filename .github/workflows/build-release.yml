@@ -26,7 +26,7 @@ jobs:
 
       - name: Build executable with PyInstaller
         run: |
-          pyinstaller --noconfirm --clean --onefile dev_webserver.py --name debserv --icon Icon.ico
+          pyinstaller --noconfirm --clean --onefile run.py --name debserv --icon Icon.ico
 
       - name: Prepare release package
         shell: pwsh
