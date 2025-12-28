@@ -1,10 +1,14 @@
 import os
 import time
 import re
+import sys
 from pathlib import Path
 from datetime import datetime
 from collections import deque
 from plyer import notification
+
+if sys.platform == "win32":
+    import plyer.platforms.win.notification  # noqa: F401
 
 # ==============================
 # CONFIG
