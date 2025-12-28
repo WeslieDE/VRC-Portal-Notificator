@@ -33,7 +33,7 @@ jobs:
         run: |
           $packageDir = "release-package"
           New-Item $packageDir -ItemType Directory -Force | Out-Null
-          Copy-Item -Path "dist/portalwatcher.exe" -Destination $packageDir -Force
+          Copy-Item -Path "dist/PortalWatcher.exe" -Destination $packageDir -Force
           $items = Get-ChildItem $packageDir
           Compress-Archive -Path $items.FullName -DestinationPath "portalwatcher.zip" -Force
 
